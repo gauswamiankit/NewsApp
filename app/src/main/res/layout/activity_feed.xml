@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Feed">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:id="@+id/mainlayout"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NEWS"
+            android:fontFamily="@font/medium"
+            android:textColor="#f4f5f7"
+            android:textSize="20sp"
+            android:background="#30313a"
+            android:padding="10dp"
+            android:textAlignment="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#30313a"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="#30313a"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_marginEnd="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="25dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="10dp"
+                            android:text="News feed"
+                            android:textColor="#f3f4f5"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/regular" />
+                                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="5dp">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/recyLiner"
+            android:background="#30313a"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:background="#30313a"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingTop="5dp"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:backgroundTint="#4ba3d5"
+                    android:background="@drawable/trend"/>
+
+                <TextView
+                    android:paddingRight="5dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Category"
+                    android:textColor="#c8c7ce"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:id="@+id/cardSports"
+                        android:layout_margin="10dp"
+                        app:cardCornerRadius="10dp"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                app:lottie_rawRes="@raw/sport"
+                                android:layout_gravity="center"
+                                app:lottie_loop="true"
+                                app:lottie_autoPlay="true" />
+                            <TextView
+                                android:layout_margin="5dp"
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Sports"/>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_margin="10dp"
+                        android:id="@+id/cardHealth"
+                        app:cardCornerRadius="10dp"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                app:lottie_rawRes="@raw/health"
+                                android:layout_gravity="center"
+                                app:lottie_loop="true"
+                                app:lottie_autoPlay="true" />
+                            <TextView
+                                android:layout_margin="5dp"
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Health"/>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:id="@+id/cardScience"
+                        android:layout_margin="10dp"
+                        app:cardCornerRadius="10dp"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                app:lottie_rawRes="@raw/science"
+                                android:layout_gravity="center"
+                                app:lottie_loop="true"
+                                app:lottie_autoPlay="true" />
+                            <TextView
+                                android:layout_margin="5dp"
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Science"/>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:id="@+id/cardEntertainment"
+                        android:layout_margin="10dp"
+                        app:cardCornerRadius="10dp"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                app:lottie_rawRes="@raw/enterrrrr"
+                                android:layout_gravity="center"
+                                app:lottie_loop="true"
+                                app:lottie_autoPlay="true" />
+                            <TextView
+                                android:layout_margin="5dp"
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Entertainment"/>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:id="@+id/cardTechnology"
+                        android:layout_margin="10dp"
+                        app:cardCornerRadius="10dp"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                app:lottie_rawRes="@raw/tech"
+                                android:layout_gravity="center"
+                                app:lottie_loop="true"
+                                app:lottie_autoPlay="true" />
+                            <TextView
+                                android:layout_margin="5dp"
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Technology"/>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_margin="10dp"
+                        app:cardCornerRadius="10dp"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                app:lottie_rawRes="@raw/dino"
+                                android:layout_gravity="center"
+                                app:lottie_loop="true"
+                                app:lottie_autoPlay="true" />
+                            <TextView
+                                android:layout_margin="5dp"
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Upcoming"/>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation"
+        app:itemBackground="@color/background"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu_navigation"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

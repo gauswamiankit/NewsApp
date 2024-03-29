@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Category.Sports">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:id="@+id/mainlayout"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NEWS"
+            android:fontFamily="@font/medium"
+            android:textColor="#f4f5f7"
+            android:textSize="20sp"
+            android:background="#30313a"
+            android:padding="10dp"
+            android:textAlignment="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#30313a"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="#30313a"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_marginEnd="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/date"
+                            android:textColor="#c8c7ce"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:layout_marginStart="15dp"
+                            android:text="date"
+                            android:fontFamily="@font/regular" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="25dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Sports"
+                            android:textColor="#f3f4f5"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/regular" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:paddingStart="15dp"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <com.airbnb.lottie.LottieAnimationView-->
+<!--                        android:layout_margin="10dp"-->
+<!--                        android:layout_width="50dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        app:lottie_rawRes="@raw/health"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        app:lottie_loop="true"-->
+<!--                        app:lottie_autoPlay="true" />-->
+<!--                    <com.airbnb.lottie.LottieAnimationView-->
+<!--                        android:layout_margin="10dp"-->
+<!--                        android:layout_width="50dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        app:lottie_rawRes="@raw/science"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        app:lottie_loop="true"-->
+<!--                        app:lottie_autoPlay="true" />-->
+<!--                    <com.airbnb.lottie.LottieAnimationView-->
+<!--                        android:layout_width="50dp"-->
+<!--                        android:layout_margin="10dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        app:lottie_rawRes="@raw/enterrrrr"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        app:lottie_loop="true"-->
+<!--                        app:lottie_autoPlay="true" />-->
+<!--                    <com.airbnb.lottie.LottieAnimationView-->
+<!--                        android:layout_width="50dp"-->
+<!--                        android:layout_margin="10dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        app:lottie_rawRes="@raw/tech"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        app:lottie_loop="true"-->
+<!--                        app:lottie_autoPlay="true" />-->
+
+
+
+<!--                </LinearLayout>-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="5dp">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/recyLiner"
+            android:background="#30313a"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:background="#30313a"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingTop="5dp"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:backgroundTint="#4ba3d5"
+                    android:background="@drawable/trend"/>
+
+                <TextView
+                    android:paddingRight="5dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Popular posts"
+                    android:textColor="#c8c7ce"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/swipeRefresh">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:background="#30313a"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/recyclerView"/>
+
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
