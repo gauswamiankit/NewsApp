@@ -1,14 +1,23 @@
 
 # Newsey App
 
-## Dashboard Screenshort
-![HomeScreen_Screenshot](https://github.com/gauswamiankit/NewsApp/assets/68368460/11e5d978-1453-4f21-bce1-d658ada6c235)
+<table>
+  <tr>
+    <td align="center">
+      <b>Dashboard Screenshot</b><br><br>
+      <img src="https://github.com/gauswamiankit/NewsApp/assets/68368460/11e5d978-1453-4f21-bce1-d658ada6c235" alt="HomeScreen_Screenshot" width="200">
+    </td>
+    <td align="center">
+      <b>Categories Screenshot</b><br><br>
+      <img src="https://github.com/gauswamiankit/NewsApp/assets/68368460/9ed30f7a-a3f5-419c-b6ad-7b59b1c3d742" alt="FeedScreen_Screenshot" width="200">
+    </td>
+    <td align="center">
+      <b>Category News Screenshot</b><br><br>
+      <img src="https://github.com/gauswamiankit/NewsApp/assets/68368460/1dbdf7e9-8d86-43a0-94d9-a765060761fe" alt="FeedCategory_Screenshot" width="200">
+    </td>
+  </tr>
+</table>
 
-## Categories Screenshort
-![FeedScreen_Screenshot](https://github.com/gauswamiankit/NewsApp/assets/68368460/9ed30f7a-a3f5-419c-b6ad-7b59b1c3d742)
-
-## CategoryNews Screenshort
-![FeedCategory_Screenshot](https://github.com/gauswamiankit/NewsApp/assets/68368460/1dbdf7e9-8d86-43a0-94d9-a765060761fe)
 
 Stay Informed Anywhere, Anytime with Latest News App!
 
