@@ -37,9 +37,6 @@ Excited to introduce our newest project, the Newsey App, designed to keep users 
 
 🎯 **Personalized Content**: Our app puts users in control, allowing them to tailor their news feed to their specific interests, ensuring they receive content that matters most to them.
 
-## Installation
-
-To use the Newsey App, simply download the APK file from the releases section of this repository and install it on your Android device.
 
 ## Contributing
 
